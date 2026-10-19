@@ -1,0 +1,19 @@
+{
+  "revision": "2026-10-19 scientific presentation edition",
+  "scope": "Selected current figure sets only. Retained historical graphics are not automatically certified compliant.",
+  "figures": [
+    {
+      "evidence_class": "Conceptual workflow diagram",
+      "caption": "run lineage",
+      "limitations": "Diagram or analytical screen; no measured hardware, qualified design or inherited side-project evidence.",
+      "sources": {
+        "tools/generate_figure.py": "1167a494814274e9c2d2b5cd87ad8c4085622760dc6ae2af387676f316fb9360"
+      },
+      "exports": {
+        "figures/run-lineage.svg": "671f4a84aa3b7aaff5841b372e6086d359e701face513e1871d00209807285d4",
+        "figures/run-lineage.pdf": "373d91eefeb980b3546836079e7f3d3f6284dfd29aa5f7cd80f7e59638d9db30",
+        "figures/run-lineage.png": "4277a1b3f59a981be773f135a605b16bbd41406fc020d5f6e9878be82667a469"
+      }
+    }
+  ]
+}

@@ -32,3 +32,7 @@ unavailable; network/distributed filesystems and alternate hard-link aliases are
 Atomic replacement does not promise directory-entry durability after power loss. This is a
 local registry, not a database transaction or immutable archive. Parent existence and digest
 checks are evaluated against one snapshot by `verify()`.
+
+[Scientific figures and documentation conventions](docs/FIGURE_STANDARD.md) · [Released figure sources](docs/SCIENTIFIC_FIGURES.json)
+
+The overview figures are regenerated with `python tools/generate_figure.py`. Quantitative plots retain their committed model inputs; diagrams describe relationships and do not add validation evidence.
