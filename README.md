@@ -6,9 +6,21 @@ A small, dependency-free registry that gives a computational run a stable identi
 from canonical inputs, outputs, claims, and parent runs. It makes stale or modified records
 detectable without imposing a database.
 
+Install from the repository root with Python 3.11 or newer:
+
+```bash
+python -m pip install -e .
+```
+
 ```python
+from pathlib import Path
+from tempfile import TemporaryDirectory
 from run_registry import Registry
-run=Registry("runs.json").register({"x":1},{"y":2},["C1"])
+
+with TemporaryDirectory() as directory:
+    registry = Registry(Path(directory) / "runs.json")
+    run = registry.register({"x":1}, {"y":2}, ["C1"])
+    print(run)
 ```
 
 Run `python tools/generate_figure.py` and `python -m unittest discover -s tests -v`. The repository is a reusable primitive,
@@ -36,3 +48,9 @@ checks are evaluated against one snapshot by `verify()`.
 [Scientific figures and documentation conventions](docs/FIGURE_STANDARD.md) · [Released figure sources](docs/SCIENTIFIC_FIGURES.json)
 
 The overview figures are regenerated with `python tools/generate_figure.py`. Quantitative plots retain their committed model inputs; diagrams describe relationships and do not add validation evidence.
+
+## Version and case reference
+
+[Current VOLLEY case boundary](docs/VOLLEY_CASE.md) · [Citation](CITATION.cff) · [License](LICENSE) · [Attribution](NOTICE)
+
+[Publication rules and exact-payload checks](PUBLICATION_POLICY.md)

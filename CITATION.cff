@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite this software version and the exact source/result revision used; historical VOLLEY fixtures have their own provenance."
+title: "scientific-run-registry"
+type: software
+authors:
+  - family-names: Mishra
+    given-names: Adityavardhan
+license: Apache-2.0
+repository-code: "https://github.com/aaaaaaaaaaaavm/scientific-run-registry"
+version: "0.1.1"
